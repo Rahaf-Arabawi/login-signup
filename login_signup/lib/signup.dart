@@ -9,7 +9,8 @@ class Signup extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: SingleChildScrollView( // عشان ما يصير overflow
+        child: SingleChildScrollView(
+          // عشان ما يصير overflow
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(

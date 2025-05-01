@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
-  Login({Key? key});
+  Login({super.key});
   final GlobalKey<FormState> formkey = GlobalKey<FormState>();
 
   @override
@@ -17,10 +17,10 @@ class Login extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Image.asset('images/logo.png'),
-                  const Text(
-                    'Welcome! Please login here',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
+                  // const Text(
+                  //   'Welcome! Please login here',
+                  //   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  // ),
                   const SizedBox(height: 24),
                   Form(
                     key: formkey,
@@ -63,15 +63,15 @@ class Login extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 24),
-                        
+
                         Align(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                        'Forget Password?',
-                        style: TextStyle(fontSize: 14, color: Colors.blue),
-                       ),
+                          alignment: Alignment.centerRight,
+                          child: Text(
+                            'Forget Password?',
+                            style: TextStyle(fontSize: 14, color: Colors.blue),
+                          ),
                         ),
-                       const SizedBox(height: 16),
+                        const SizedBox(height: 16),
 
                         SizedBox(
                           width: double.infinity,
@@ -91,7 +91,7 @@ class Login extends StatelessWidget {
                               ),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
